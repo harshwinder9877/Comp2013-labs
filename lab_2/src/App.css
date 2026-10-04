@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  background-color: #0d0f11;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  background-color: #17181d;
+  text-align: center;
+  font-size: 55px;
+  margin: 0;
+  padding: 15px;
+  color: #f1f1f1;
+}
+
+.ResortContainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 35px 40px 70px 40px;
+}
+
+.ResortCard {
+  width: 190px;
+  padding: 10px;
+  margin: 0;
+}
+
+.ResortCard img {
+  width: 190px;
+  height: 315px;
+  object-fit: cover;
+}
+
+.ResortCard h2 {
+  color: white;
+  font-size: 20px;
+  margin: 10px 0 5px 0;
+}
+
+.ResortCard h3 {
+  font-size: 19px;
+  margin: 5px 0;
+}
+
+.ResortCard h3:nth-of-type(1) {
+  color: gray;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.ResortCard h3:nth-of-type(2) {
+  margin-top: 15px;
+  font-weight: normal;
+}
+
+.ResortCard p {
+  color: gray;
+  font-size: 19px;
+  font-weight: normal;
+  margin-top: 15px;
+}
+
+@media (max-width: 450px) {
+  .ResortContainer {
+    flex-direction: column;
+  }
+
+  .ResortCard {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+#root {
+  border: none;
+  outline: none;
+  width: 100%;
+  max-width: none;
+}
